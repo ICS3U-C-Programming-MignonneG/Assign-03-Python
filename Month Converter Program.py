@@ -8,7 +8,11 @@
 
 def main():
     # Initial greeting
+<<<<<<< HEAD
     print("Welcome to Mignonne’s Month Converter program!")
+=======
+    print("Welcome to Mignonne’s Month Converter program!\n")
+>>>>>>> e7157c6c977b48cd11f5105bbc5aaf179c92daf6
 
     try:
         # input
