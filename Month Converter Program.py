@@ -2,10 +2,14 @@
 
 # Created by: Mignonne Gihozo
 # Created on: Oct 2026
-# This program converts a number to match the month.
+# This program converts a number to match the month
+# and includes the corresponding season as extra functionality.
 
 
 def main():
+    # Initial greeting
+    print("Welcome to Mignonne’s Month Converter program!")
+
     try:
         # input
         month_number = int(input("Enter a number between 1 and 12: "))
@@ -28,12 +32,16 @@ def main():
         }
 
         if 1 <= month_number <= 12:
-            print(months[month_number])
+            month_name, season = months[month_number]
+            print(month_name)
+            print(f"Extra: The season for {month_name} is {season}.")
         else:
             print("That is not a valid number")
 
     except ValueError:
         print("That is not a valid number")
+
+    print("\nDone.")
 
 
 if __name__ == "__main__":
